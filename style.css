@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#footer {
+    font-size: small;
+}
+
+#scoreBoard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#playerScore {
+    margin-right: 20px;
+}
+
+
+#gameContainer {
+    text-align: center;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#winnerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#winnerMessage {
+    font-size: 2em; 
+    color: white; 
+    margin-bottom: 20px; 
+}
